@@ -4,11 +4,11 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, sensei, woothemes sensei, woothemes, lms, learning management system, learning, courses, courseware, education, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv3
-URI: http://www.gnu.org/licenses/gpl-3.0.html
+Stable tag: 1.0.1
 Sensei requires at least: 1.8.0
 Sensei tested up to: 1.8.2
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 BuddyPress for Sensei integrates the WooThemes Sensei LMS plugin with BuddyPress, so you can add course discussion and social activity to your education site.
 
@@ -77,7 +77,17 @@ Yes. Want to translate BuddyPress for Sensei into your own language? We'll be ha
 
 For BuddyPress customizations, submit your request at [BuddyBoss](http://www.buddyboss.com/buddypress-developers/).
 
+== Screenshots ==
+
+1. **Course Group** - Associate Sensei courses with BuddyPress groups.
+2. **Members Index** - Display Teachers and Students in separate tabs in your Members directory. 
+3. **Course Group Settings** - Add a course to a BuddyPress group and configure its activity actions.
+4. **Plugin Settings** - Configure the core plugin options.
+
 == Changelog ==
+
+= 1.0.1 =
+* Updated readme
 
 = 1.0.0 =
 * Initial public release
