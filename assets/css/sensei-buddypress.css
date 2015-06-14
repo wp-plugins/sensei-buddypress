@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+This is the BuddyPress for Sensei plugin stylesheet.
+--------------------------------------------------------------*/
+
+.bp-hidepublic #group-settings-form label:first-child {
+	display: none;
+}
+.bp-sensei-msg-link {
+	float: left;
+	margin-right: 10px;
+}
+#my-courses.ui-widget-content {
+	background: transparent;
+}

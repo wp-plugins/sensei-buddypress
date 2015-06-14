@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BuddyPress for Sensei v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-06-14 23:16+0800\n"
+"Last-Translator: BuddyBoss <support@buddyboss.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ sensei-buddypress
+#: sensei-buddypress.php:69
+#, php-format
+msgid "Couldn't load main class at:<br/>%s"
+msgstr ""
+
+# @ sensei-buddypress
+#: sensei-buddypress.php:74
+#, php-format
+msgid "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/main-class.php:158 includes/main-class.php:165
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:134
+msgid "General Settings"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:136
+msgid "Visibility"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:137
+msgid "User Roles"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:207
+msgid "Save Changes"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:222
+msgid "Display <em>Profile > Courses</em> content publicly"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:235
+msgid "Convert subscribers to user role Student"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:248
+msgid "Convert teachers to user role Teacher"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-loader.php:352 includes/bp-sensei-loader.php:354
+#, php-format
+msgid "Contact %1$s Teacher"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:508
+#, php-format
+msgid "Teachers <span>%s</span>"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:509
+#, php-format
+msgid "Students <span>%s</span>"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:270 includes/bp-sensei-functions.php:478
+msgid "by "
+msgstr ""
+
+# @ sensei-buddypress
+# @ woothemes-sensei
+#: includes/bp-sensei-functions.php:278 includes/bp-sensei-functions.php:482
+#: includes/bp-sensei-group-experiences.php:146
+#: includes/bp-sensei-group-experiences.php:164
+msgid "Lessons"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:281 includes/bp-sensei-functions.php:485
+#, php-format
+msgid "in %s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:283
+#, php-format
+msgid "%1$d of %2$d lessons completed"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-functions.php:310
+msgid "Mark as Complete"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:349 includes/bp-sensei-functions.php:528
+msgid "Previous"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:364 includes/bp-sensei-functions.php:543
+msgid "Next"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:374
+msgid "You have no active courses."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:552
+msgid "You have not completed any courses yet."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:376
+msgid "This learner has no active courses."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:554
+msgid "This learner has not completed any courses yet."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:501
+msgid "View results"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:165
+msgid "Settings"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-courses.php:16 includes/bp-sensei-functions.php:30
+msgid "Active Courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-courses.php:32 includes/bp-sensei-functions.php:46
+msgid "Completed Courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:14
+msgid "Courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:22
+msgid "courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:38
+msgid "active-courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:62
+msgid "completed-courses"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:494
+msgid "Students"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:495
+msgid "Student"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:500
+msgid "Teachers"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:501
+msgid "Teacher"
+msgstr ""
+
+# @ sensei-buddypress
+#: templates/active-courses.php:38
+msgid "Take a Course!"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:149 includes/admin.php:201
+msgid "BuddyPress for Sensei"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/admin.php:149
+msgid "BP for Sensei"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:54
+msgid "Create a Course"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-functions.php:70
+msgid "create-courses"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-functions.php:323
+msgid "Delete Course"
+msgstr ""
+
+# @ boss-education
+#: includes/bp-sensei-group-experiences.php:23
+msgid "Course"
+msgstr ""
+
+# @ sensei_media_attachments
+#: includes/bp-sensei-group-experiences.php:60
+#, php-format
+msgid "%s Media"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:111
+msgid "Completed"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:114
+msgid "In progress"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:212
+#, php-format
+msgid "Start %s"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:218
+#, php-format
+msgid "%s"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:223
+msgid "Length: "
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:223
+msgid " minutes"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:226
+msgid "Author: "
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:229
+msgid "Complexity: "
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:233
+msgid "Complete"
+msgstr ""
+
+# @ woothemes-sensei
+#: includes/bp-sensei-group-experiences.php:235
+msgid "In Progress"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:41
+msgid "Group Course"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:43 includes/bp-sensei-groups.php:87
+msgid "--Select--"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:65
+msgid "Course Activity"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:66
+msgid "Which course activity should be displayed in this group?"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:67
+msgid "User starts a course"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:68
+msgid "User completes a course"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:69
+msgid "User creates a lesson"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:70
+msgid "User completes a lesson"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:71
+msgid "User passes a quiz"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-group-settings.php:72
+msgid "User comments on single lesson page"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-groups.php:68
+msgid "Course Group"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-groups.php:85
+msgid "Add this course to a BuddyPress group."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-groups.php:99
+msgid "&#43; Create New Group"
+msgstr ""
+
+# @ buddypress
+#: includes/bp-sensei-groups.php:252
+msgid "Private Course Group"
+msgstr ""
+
+# @ buddypress
+#: includes/bp-sensei-groups.php:255
+msgid "Hidden Course Group"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-groups.php:272
+msgid "Course Discussions"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:119
+#, php-format
+msgid "%1$s added the lesson %2$s to the course %3$s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:152
+#, php-format
+msgid "%1$s started taking the course %2$s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:188
+#, php-format
+msgid "%1$s completed the lesson %2$s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:224
+#, php-format
+msgid "%1$s completed the course %2$s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:268
+#, php-format
+msgid "%1$s commented on lesson %2$s"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-loader.php:316
+#, php-format
+msgid "%1$s has passed the %2$s quiz achieving %3$s %%"
+msgstr ""
