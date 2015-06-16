@@ -165,6 +165,8 @@ if ( class_exists( 'BP_Group_Extension' ) ) :
 		
 	}
 
-	bp_register_group_extension( 'Group_Extension_Course_Settings' );
+	if ( bp_is_active('groups') ) {
+		bp_register_group_extension( 'Group_Extension_Course_Settings' );
+	}
  
 endif; // if ( class_exists( 'BP_Group_Extension' ) )

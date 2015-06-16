@@ -277,5 +277,7 @@ if ( ! class_exists( 'BuddyPress_Sensei_Groups' ) ) {
 
 	} // End of class
 
-	BuddyPress_Sensei_Groups::instance();
+	if ( bp_is_active('groups') ) {
+		BuddyPress_Sensei_Groups::instance();
+	}
 }

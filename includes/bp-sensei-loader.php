@@ -320,7 +320,7 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 				);
 				$activity_recorded = bp_sensei_record_activity( $args );
 				if($activity_recorded) {
-					bp_activity_add_meta($activity_recorded, 'bp_sensei_group_activity_markup_courseid', $course_id );
+					bp_activity_add_meta($activity_recorded, 'bp_sensei_group_activity_markup_courseid', $quiz_lession_id );
 				}
 			
 			

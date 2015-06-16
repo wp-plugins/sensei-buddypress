@@ -412,7 +412,10 @@ class BuddyPress_Sensei_Plugin {
 	 * Load Group Course extension 
 	 */
 	public function bp_sensei_add_group_course_extension() {
-		bp_register_group_extension( 'GType_Course' );
+		
+		if ( bp_is_active('groups') ) {
+			bp_register_group_extension( 'GType_Course' );
+		}
 	}
 
 
