@@ -4,7 +4,7 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, sensei, woothemes sensei, woothemes, lms, learning management system, learning, courses, courseware, education, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Sensei requires at least: 1.8.0
 Sensei tested up to: 1.8.2
 License: GPLv3
@@ -85,6 +85,9 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 4. **Plugin Settings** - Configure the core plugin options.
 
 == Changelog ==
+
+= 1.0.4 =
+* Plugin loads correctly with bbPress disabled
 
 = 1.0.3 =
 * Plugin loads correctly with BuddyPress Groups disabled

@@ -658,20 +658,21 @@ function bp_sensei_update_group_avatar( $course_id, $group_id ) {
 	 */
 	function bp_sensei_attach_forum( $group_id ) {
 		
+		if ( bp_is_group_forums_active() ) {
+
 			$group = groups_get_group( array( 'group_id' => $group_id ) );
-			
 			if ( $group->enable_forum == '0' ) {
 				$forum_id = bbp_insert_forum( array( 'post_title' => $group->name ) );
 				bbp_add_forum_id_to_group( $group_id, $forum_id );
 				bbp_add_group_id_to_forum( $forum_id, $group_id );
 				bp_sensei_enable_disable_group_forum( '1', $group_id );
 			}
+
+		}
 	}
 
 	/**
 	 * Sensei Group forum enable/disable
-	 * @global type $wpdb
-	 * @global type $bp
 	 * @param type $enable
 	 * @param type $group_id
 	 */
