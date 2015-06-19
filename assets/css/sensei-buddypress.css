@@ -5,10 +5,21 @@ This is the BuddyPress for Sensei plugin stylesheet.
 .bp-hidepublic #group-settings-form label:first-child {
 	display: none;
 }
-.bp-sensei-msg-link {
+.course .bp-sensei-msg-link {
 	float: left;
 	margin-right: 10px;
 }
+.course .bp-sensei-msg-link:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
 #my-courses.ui-widget-content {
 	background: transparent;
+}
+.single-course .course .entry {
+	clear: left;
 }

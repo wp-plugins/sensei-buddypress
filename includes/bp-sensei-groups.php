@@ -259,8 +259,7 @@ if ( ! class_exists( 'BuddyPress_Sensei_Groups' ) ) {
 		}
 		
 		public function bp_sensei_group_discussion_button( ) {
-			if ( ! ( is_singular( 'course' ) || is_singular( 'lesson' ) ) ) return;
-
+			if ( ! ( is_singular( 'course' ) || is_singular( 'lesson' ) ) || !empty($_GET['contact']) ) return;
             $html = '';
 			$course_id = get_the_ID();
 			$group_attached = get_post_meta( $course_id, 'bp_course_group', true );
@@ -269,7 +268,7 @@ if ( ! class_exists( 'BuddyPress_Sensei_Groups' ) ) {
 			
 			global $bp;
 			$group_data = groups_get_slug($group_attached);
-			$html = '<p class="bp-group-discussion"><a class="button" href="'. trailingslashit(home_url()).trailingslashit($bp->groups->slug).$group_data .'">'.__('Course Discussions','sensei-buddypress').'</a></p>';
+			$html = '<p class="bp-group-discussion"><a class="button" href="'. trailingslashit(home_url()).trailingslashit($bp->groups->slug).$group_data .'">'.__('Course Discussion','sensei-buddypress').'</a></p>';
 			
 			echo $html;
 		}

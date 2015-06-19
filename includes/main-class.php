@@ -288,8 +288,8 @@ class BuddyPress_Sensei_Plugin {
 
     public function bp_sensei_enqueue_styles() {
         // CSS > Main
-        //wp_enqueue_style( 'sensei-buddypress', $this->assets_url . '/css/sensei-buddypress.css', array(), '1.0.0', 'all' );
-        wp_enqueue_style( 'sensei-buddypress', $this->assets_url . '/css/sensei-buddypress.min.css', array(), '1.0.0', 'all' );
+        //wp_enqueue_style( 'sensei-buddypress', $this->assets_url . '/css/sensei-buddypress.css', array(), '1.0.5', 'all' );
+        wp_enqueue_style( 'sensei-buddypress', $this->assets_url . '/css/sensei-buddypress.min.css', array(), '1.0.5', 'all' );
         // JS > Main
         //wp_enqueue_script( 'sensei-buddypress', $this->assets_url . '/js/sensei-buddypress.js', array(), '1.0.0', true );
         wp_enqueue_script( 'sensei-buddypress', $this->assets_url . '/js/sensei-buddypress.min.js', array(), '1.0.0', true );

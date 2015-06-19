@@ -199,6 +199,14 @@ if (!class_exists('BuddyPress_Sensei_Admin')):
         ?>
             <div class="wrap">
                 <h2><?php _e( 'BuddyPress for Sensei', 'sensei-buddypress' ); ?></h2>
+				<?php 
+					if ( !function_exists( 'bp_is_active' ) ) {
+						
+						echo '<div class="error"><p>Please activate BuddyPress first.</p></div>';
+						
+						return;
+					}
+				?>
                 <form action="options.php" method="post">
                 <?php settings_fields('buddypress_sensei_plugin_options'); ?>
                 <?php do_settings_sections( __FILE__ ); ?>

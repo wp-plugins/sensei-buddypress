@@ -5,7 +5,7 @@
  * Description: Integrate the WooThemes Sensei plugin with BuddyPress, so you can add social activity to your education site.
  * Author:      BuddyBoss
  * Author URI:  http://buddyboss.com
- * Version:     1.0.4
+ * Version:     1.0.5
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -52,6 +52,41 @@ if ( !defined( 'BUDDYPRESS_SENSEI_PLUGIN_FILE' ) ) {
  */
 
 /**
+ * Check whether
+ * it meets all requirements
+ * @return void
+ */
+function buddypress_sensei_requirements()
+{
+
+    global $Plugin_Requirements_Check;
+
+    $requirements_Check_include  = BUDDYPRESS_SENSEI_PLUGIN_DIR  . 'includes/requirements-class.php';
+
+    try
+    {
+        if ( file_exists( $requirements_Check_include ) )
+        {
+            require( $requirements_Check_include );
+        }
+        else{
+            $msg = sprintf( __( "Couldn't load Plugin_Requirements_Check class at:<br/>%s", 'sensei-buddypress' ), $requirements_Check_include );
+            throw new Exception( $msg, 404 );
+        }
+    }
+    catch( Exception $e )
+    {
+        $msg = sprintf( __( "<h1>Fatal error:</h1><hr/><pre>%s</pre>", 'sensei-buddypress' ), $e->getMessage() );
+        echo $msg;
+    }
+
+    $Plugin_Requirements_Check = new Plugin_Requirements_Check();
+    $Plugin_Requirements_Check->activation_check();
+
+}
+register_activation_hook( __FILE__, 'buddypress_sensei_requirements' );
+
+/**
  * Main
  *
  * @return void
@@ -85,11 +120,13 @@ add_action( 'plugins_loaded', 'BUDDYPRESS_SENSEI_init' );
  * @return BuddyPress for Sensei Plugin main controller object
  */
 function buddypress_sensei() {
-  global $BUDDYPRESS_SENSEI;
+  global $BUDDYPRESS_SENSEI,$bp;
 
-  $BUDDYPRESS_SENSEI->bp_sensei_loader = BuddyPress_Sensei_Loader::instance();
+  if ( $bp ) {
+	$BUDDYPRESS_SENSEI->bp_sensei_loader = BuddyPress_Sensei_Loader::instance();
+  }
   
-  if ( bp_is_active('groups') ) {
+  if ( $bp && bp_is_active('groups') ) {
 	 $BUDDYPRESS_SENSEI->bp_sensei_groups = BuddyPress_Sensei_Groups::instance();
   }
 

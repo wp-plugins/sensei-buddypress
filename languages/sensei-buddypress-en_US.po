@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: BuddyPress for Sensei v1.0.3\n"
+"Project-Id-Version: BuddyPress for Sensei v1.0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-06-16 14:41+0800\n"
+"PO-Revision-Date: 2015-06-20 02:31+0800\n"
 "Last-Translator: BuddyBoss <support@buddyboss.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,13 +18,13 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 # @ sensei-buddypress
-#: sensei-buddypress.php:69
+#: sensei-buddypress.php:104
 #, php-format
 msgid "Couldn't load main class at:<br/>%s"
 msgstr ""
 
 # @ sensei-buddypress
-#: sensei-buddypress.php:74
+#: sensei-buddypress.php:79 sensei-buddypress.php:109
 #, php-format
 msgid "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
 msgstr ""
@@ -50,22 +50,22 @@ msgid "User Roles"
 msgstr ""
 
 # @ sensei-buddypress
-#: includes/admin.php:207
+#: includes/admin.php:215
 msgid "Save Changes"
 msgstr ""
 
 # @ sensei-buddypress
-#: includes/admin.php:222
+#: includes/admin.php:230
 msgid "Display <em>Profile > Courses</em> content publicly"
 msgstr ""
 
 # @ sensei-buddypress
-#: includes/admin.php:235
+#: includes/admin.php:243
 msgid "Convert subscribers to user role Student"
 msgstr ""
 
 # @ sensei-buddypress
-#: includes/admin.php:248
+#: includes/admin.php:256
 msgid "Convert teachers to user role Teacher"
 msgstr ""
 
@@ -376,11 +376,6 @@ msgid "Hidden Course Group"
 msgstr ""
 
 # @ sensei-buddypress
-#: includes/bp-sensei-groups.php:272
-msgid "Course Discussions"
-msgstr ""
-
-# @ sensei-buddypress
 #: includes/bp-sensei-loader.php:119
 #, php-format
 msgid "%1$s added the lesson %2$s to the course %3$s"
@@ -414,4 +409,25 @@ msgstr ""
 #: includes/bp-sensei-loader.php:316
 #, php-format
 msgid "%1$s has passed the %2$s quiz achieving %3$s %%"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/bp-sensei-groups.php:271
+msgid "Course Discussion"
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/requirements-class.php:22
+msgid "Please install the <a target=\"_blank\" href=\"http://www.woothemes.com/products/sensei/\">Sensei</a> plugin first."
+msgstr ""
+
+# @ sensei-buddypress
+#: includes/requirements-class.php:40
+msgid "Please install <a href=\"http://www.woothemes.com/products/sensei/\">Sensei</a> plugin first."
+msgstr ""
+
+# @ sensei-buddypress
+#: sensei-buddypress.php:73
+#, php-format
+msgid "Couldn't load Plugin_Requirements_Check class at:<br/>%s"
 msgstr ""
