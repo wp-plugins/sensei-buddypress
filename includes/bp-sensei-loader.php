@@ -162,7 +162,7 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
         }
 
         /**
-         * Sensei user lession end activity
+         * Sensei user lesson end activity
          */
         public function bp_sensei_user_lesson_end_activity( $user_id, $lesson_id ) {
             global $woothemes_sensei,$bp;
@@ -179,14 +179,14 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 				return;
 			}
                 $user_link = bp_core_get_userlink( $user_id );
-                $lession_title = get_the_title( $lesson_id );
-                $lession_link = get_permalink( $lesson_id );
-                $lession_link_html = '<a href="' . esc_url( $lession_link ) . '">' . $lession_title . '</a>';
+                $lesson_title = get_the_title( $lesson_id );
+                $lesson_link = get_permalink( $lesson_id );
+                $lesson_link_html = '<a href="' . esc_url( $lesson_link ) . '">' . $lesson_title . '</a>';
                 $args = array(
                     'type' => 'activity_update',
                     'action' => apply_filters( 'bp_sensei_user_lesson_end_activity',
                         sprintf( __( '%1$s completed the lesson %2$s', 'sensei-buddypress' ),
-                            $user_link, $lession_link_html ), $user_id, $lesson_id ),
+                            $user_link, $lesson_link_html ), $user_id, $lesson_id ),
                     'item_id' => $group_attached,
 					'component'	=> $bp->groups->id,
 					'hide_sitewide'	=> true
@@ -260,12 +260,12 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 				}
 
 				$user_link = bp_core_get_userlink( $comment_obj->user_id );
-				$lession_title = get_the_title( $post_id );
-                $lession_link = get_permalink( $post_id );
-                $lession_link_html = '<a href="' . esc_url( $lession_link ) . '">' . $lession_title . '</a>';
+				$lesson_title = get_the_title( $post_id );
+                $lesson_link = get_permalink( $post_id );
+                $lesson_link_html = '<a href="' . esc_url( $lesson_link ) . '">' . $lesson_title . '</a>';
 				$args = array(
 					'type' => 'activity_update',
-					'action' => apply_filters( 'bp_sensei_user_lesson_comment_activity', sprintf( __( '%1$s commented on lesson %2$s', 'sensei-buddypress' ), $user_link, $lession_link_html ), $comment_obj->user_id, $course_id ),
+					'action' => apply_filters( 'bp_sensei_user_lesson_comment_activity', sprintf( __( '%1$s commented on lesson %2$s', 'sensei-buddypress' ), $user_link, $lesson_link_html ), $comment_obj->user_id, $course_id ),
 					'item_id' => $group_attached,
 					'component' => $bp->groups->id,
 					'hide_sitewide' => true,
@@ -293,8 +293,8 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 			
 			$quiz_grade = $woothemes_sensei->quiz->data->user_quiz_grade;
 			$quiz_pass_mark = $woothemes_sensei->quiz->data->quiz_passmark;
-			$quiz_lession_id = $woothemes_sensei->quiz->data->quiz_lesson;
-			$course_id = get_post_meta($quiz_lession_id,'attached_course_id',true);
+			$quiz_lesson_id = $woothemes_sensei->quiz->data->quiz_lesson;
+			$course_id = get_post_meta($quiz_lesson_id,'attached_course_id',true);
 			$group_attached = get_post_meta( $course_id, 'bp_course_group', true );
 			if ( empty( $group_attached ) ) {
 				return;
@@ -308,19 +308,19 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 				return;
 			}
 				$user_link = bp_core_get_userlink( get_current_user_id() );
-				$lession_title = get_the_title( $quiz_lession_id );
-                $lession_link = get_permalink( $quiz_lession_id );
-                $lession_link_html = '<a href="' . esc_url( $lession_link ) . '">' . $lession_title . '</a>';
+				$lesson_title = get_the_title( $quiz_lesson_id );
+                $lesson_link = get_permalink( $quiz_lesson_id );
+                $lesson_link_html = '<a href="' . esc_url( $lesson_link ) . '">' . $lesson_title . '</a>';
 				$args = array(
 					'type' => 'activity_update',
-					'action' => apply_filters( 'bp_sensei_complete_quiz_activity', sprintf( __( '%1$s has passed the %2$s quiz achieving %3$s %%', 'sensei-buddypress' ), $user_link, $lession_link_html, $quiz_grade ), get_current_user_id(), $quiz_lession_id ),
+					'action' => apply_filters( 'bp_sensei_complete_quiz_activity', sprintf( __( '%1$s has passed the %2$s quiz achieving %3$s %%', 'sensei-buddypress' ), $user_link, $lesson_link_html, $quiz_grade ), get_current_user_id(), $quiz_lesson_id ),
 					'item_id' => $group_attached,
 					'component' => $bp->groups->id,
 					'hide_sitewide' => true
 				);
 				$activity_recorded = bp_sensei_record_activity( $args );
 				if($activity_recorded) {
-					bp_activity_add_meta($activity_recorded, 'bp_sensei_group_activity_markup_courseid', $quiz_lession_id );
+					bp_activity_add_meta($activity_recorded, 'bp_sensei_group_activity_markup_courseid', $quiz_lesson_id );
 				}
 			
 			

@@ -5,7 +5,7 @@
  * Description: Integrate the WooThemes Sensei plugin with BuddyPress, so you can add social activity to your education site.
  * Author:      BuddyBoss
  * Author URI:  http://buddyboss.com
- * Version:     1.0.5
+ * Version:     1.0.6
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 

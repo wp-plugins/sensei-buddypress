@@ -4,7 +4,7 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, sensei, woothemes sensei, woothemes, lms, learning management system, learning, courses, courseware, education, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Sensei requires at least: 1.8.0
 Sensei tested up to: 1.8.2
 License: GPLv3
@@ -19,6 +19,7 @@ Want your students and teachers to interact with each other? **BuddyPress for Se
 = BuddyPress Groups =
 
 Easily tie any Sensei Course to a BuddyPress Group.
+
 * Course participants automatically get added as members to the group
 * Group becomes private to course participants and invited members
 * Course Lessons become visible at the group
@@ -29,6 +30,7 @@ Easily tie any Sensei Course to a BuddyPress Group.
 = BuddyPress Activity =
 
 Activity is one of the core features of BuddyPress, allowing users to interact with each other in real-time. When a course is tied to a group, course actions are optionally added to the group’s activity stream. Group admins can determine which actions to allow in their group, including:
+
 * User starts a course
 * User completes a course
 * User creates a lesson
@@ -114,6 +116,9 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 4. **Plugin Settings** - Configure the core plugin options.
 
 == Changelog ==
+
+= 1.0.6 =
+* Fixed error on Course Group creation with bbPress disabled
 
 = 1.0.5 =
 * Fixed error on Settings page with BuddyPress disabled

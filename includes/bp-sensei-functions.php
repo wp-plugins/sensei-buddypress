@@ -658,7 +658,7 @@ function bp_sensei_update_group_avatar( $course_id, $group_id ) {
 	 */
 	function bp_sensei_attach_forum( $group_id ) {
 		
-		if ( bp_is_group_forums_active() ) {
+		if ( class_exists('bbPress') && bp_is_group_forums_active() ) {
 
 			$group = groups_get_group( array( 'group_id' => $group_id ) );
 			if ( $group->enable_forum == '0' ) {
