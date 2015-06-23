@@ -4,7 +4,7 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, sensei, woothemes sensei, woothemes, lms, learning management system, learning, courses, courseware, education, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Sensei requires at least: 1.8.0
 Sensei tested up to: 1.8.2
 License: GPLv3
@@ -14,7 +14,7 @@ BuddyPress for Sensei integrates the WooThemes Sensei plugin with BuddyPress, so
 
 == Description ==
 
-Want your students and teachers to interact with each other? **BuddyPress for Sensei** turns your course driven website into a social education platform, creating a seamless bridge between BuddyPress and [Sensei](http://www.woothemes.com/products/sensei/).
+Want your students and teachers to interact with each other? **BuddyPress for Sensei** turns your course driven website into a social education platform, creating a seamless bridge between BuddyPress and [Sensei](http://www.woothemes.com/products/sensei/). You can also try [Social Learner](http://www.buddyboss.com/landing/promos-social/social-learner.php "Social Learner for Sensei"), our premium social learning solution.
 
 = BuddyPress Groups =
 
@@ -53,9 +53,9 @@ Sensei comes with a basic messaging component. If BuddyPress Messaging is enable
 
 If bbPress is enabled, a forum will be tied to every “course group” automatically, using the same name as the course for the forum title. Group members can then discuss the course in one central location.
 
-= About BuddyBoss =
+= Extend Sensei with 'Social Learner' =
 
-BuddyPress for Sensei is built by the experienced developers at BuddyBoss who also offer premium [BuddyPress themes](http://www.buddyboss.com/themes/ "BuddyPress themes from BuddyBoss") and [plugins](http://www.buddyboss.com/plugins/ "BuddyPress plugins from BuddyBoss") to build your social network.
+BuddyPress for Sensei is built by the experienced developers at BuddyBoss who also offer a premium social learning solution called [Social Learner](http://www.buddyboss.com/landing/promos-social/social-learner.php "Social Learner for Sensei").
 
 == Installation ==
 
@@ -116,6 +116,10 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 4. **Plugin Settings** - Configure the core plugin options.
 
 == Changelog ==
+
+= 1.0.7 =
+* Added notice if no lesson found in Course Group
+* Fixed a translation string
 
 = 1.0.6 =
 * Fixed error on Course Group creation with bbPress disabled

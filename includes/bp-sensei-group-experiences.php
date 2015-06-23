@@ -20,7 +20,7 @@ if ( class_exists( 'BP_Group_Extension' ) ) :
 				$group_status = groups_get_groupmeta( $bp->groups->current_group->id, 'bp_course_attached', true );
 
 				if ( $group_status ) {
-					$name = __( 'Course', 'boss-education' );
+					$name = __( 'Course', 'sensei-buddypress' );
 
 					$this->extension_slug = 'experiences';
 					$args = array(
@@ -255,6 +255,9 @@ if ( class_exists( 'BP_Group_Extension' ) ) :
 
 				$html .= '</section>';
 			} // End If Statement
+				else { ?>
+					<div id="message" class="info"><p><?php _e('This course has no lessons added yet','sensei-buddypress'); ?></p></div><?php
+				}
 			// Output the HTML
 			echo apply_filters( 'bp_sensei_group_experiences', $html, $group_id );
 		}
