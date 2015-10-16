@@ -11,7 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @return string
  */
 function bp_sensei_profile_courses_name() {
-    return __( 'Courses', 'sensei-buddypress' );
+	$course_name = apply_filters( 'bp_sensei_profile_courses_name', __( 'Courses', 'sensei-buddypress' ) );
+    return $course_name;
 }
 
 /**
@@ -19,7 +20,8 @@ function bp_sensei_profile_courses_name() {
  * @return string
  */
 function bp_sensei_profile_courses_slug() {
-    return __( 'courses', 'sensei-buddypress' );
+	$course_slug = apply_filters( 'bp_sensei_profile_courses_slug', __( 'courses', 'sensei-buddypress' ) );
+    return $course_slug;
 }
 
 /**
@@ -27,7 +29,8 @@ function bp_sensei_profile_courses_slug() {
  * @return string
  */
 function bp_sensei_profile_active_courses_name() {
-    return __( 'Active Courses', 'sensei-buddypress' );
+	$course_active_name = apply_filters( 'bp_sensei_profile_active_courses_name', __( 'Active Courses', 'sensei-buddypress' ) );
+    return $course_active_name;
 }
 
 /**
@@ -35,7 +38,8 @@ function bp_sensei_profile_active_courses_name() {
  * @return string
  */
 function bp_sensei_profile_active_courses_slug() {
-    return __( 'active-courses', 'sensei-buddypress' );
+	$course_active_slug = apply_filters( 'bp_sensei_profile_active_courses_slug', __( 'active-courses', 'sensei-buddypress' ) );
+    return $course_active_slug;
 }
 
 /**
@@ -43,7 +47,8 @@ function bp_sensei_profile_active_courses_slug() {
  * @return string
  */
 function bp_sensei_profile_completed_courses_name() {
-    return __( 'Completed Courses', 'sensei-buddypress' );
+	$course_complete_name = apply_filters( 'bp_sensei_profile_completed_courses_name', __( 'Completed Courses', 'sensei-buddypress' ) );
+    return $course_complete_name;
 }
 
 /**
@@ -51,7 +56,8 @@ function bp_sensei_profile_completed_courses_name() {
  * @return string
  */
 function bp_sensei_profile_create_courses_name() {
-    return __( 'Create a Course', 'sensei-buddypress' );
+	$course_name = apply_filters( 'bp_sensei_profile_create_courses_name', __( 'Create a Course', 'sensei-buddypress' ) );
+    return $course_name;
 }
 
 /**
@@ -59,7 +65,8 @@ function bp_sensei_profile_create_courses_name() {
  * @return string
  */
 function bp_sensei_profile_completed_courses_slug() {
-    return __( 'completed-courses', 'sensei-buddypress' );
+	$course_completed_slug = apply_filters( 'bp_sensei_profile_completed_courses_slug', __( 'completed-courses', 'sensei-buddypress' ) );
+    return $course_completed_slug;
 }
 
 /**
@@ -67,7 +74,8 @@ function bp_sensei_profile_completed_courses_slug() {
  * @return string
  */
 function bp_sensei_profile_create_courses_slug() {
-    return __( 'create-courses', 'sensei-buddypress' );
+	$course_create_slug = apply_filters( 'bp_sensei_profile_create_courses_slug', __( 'create-courses', 'sensei-buddypress' ) );
+    return $course_create_slug;
 }
 
 function bp_sensei_get_nav_link( $slug, $parent_slug='' ) {
@@ -657,11 +665,8 @@ function bp_sensei_update_group_avatar( $course_id, $group_id ) {
 	 * @param type $group_id
 	 */
 	function bp_sensei_attach_forum( $group_id ) {
-		
 		if ( class_exists('bbPress') && bp_is_group_forums_active() ) {
-
-			$group = groups_get_group( array( 'group_id' => $group_id ) );
-			if ( $group->enable_forum == '0' ) {
+			if ( $group->enable_forum == '1' ) {
 				$forum_id = bbp_insert_forum( array( 'post_title' => $group->name ) );
 				bbp_add_forum_id_to_group( $group_id, $forum_id );
 				bbp_add_group_id_to_forum( $forum_id, $group_id );

@@ -257,21 +257,25 @@ if (!class_exists('BuddyPress_Sensei_Admin')):
         }
 
         public function convert_users_to_bp_member_type( $role, $bp_member_tpe ) {
-            $all_users = get_users( 'role=' . $role );
-            foreach ( (array) $all_users as $user ) {
-                $member_type = bp_get_member_type( $user->ID );
+			global $wpdb;
+			$all_users = $wpdb->get_col( "SELECT user_id FROM {$wpdb->prefix}usermeta WHERE meta_key LIKE 'wp_capabilities' AND meta_value LIKE '%" . $role . "%' " );
+			
+            foreach ( $all_users as $user ) {
+                $member_type = bp_get_member_type( $user );
                 if($member_type != $bp_member_tpe) {
-                    bp_set_member_type( $user->ID, $bp_member_tpe );
+                    bp_set_member_type( $user, $bp_member_tpe );
                 }
             }
         }
 
         public function remove_convertion_users_to_bp_member_type( $role, $bp_member_tpe ) {
-            $subscribers = get_users( 'role=' . $role );
-            foreach ( (array) $subscribers as $user ) {
-                $member_type = bp_get_member_type( $user->ID );
+            global $wpdb;
+			$subscribers = $wpdb->get_col( "SELECT user_id FROM {$wpdb->prefix}usermeta WHERE meta_key LIKE 'wp_capabilities' AND meta_value LIKE '%" . $role . "%' " );
+			
+            foreach ( $subscribers as $user ) {
+                $member_type = bp_get_member_type( $user );
                 if ( $member_type == $bp_member_tpe ) {
-                    bp_set_member_type( $user->ID, '' );
+                    bp_set_member_type( $user, '' );
                 }
             }
         }

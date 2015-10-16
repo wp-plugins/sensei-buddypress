@@ -26,3 +26,6 @@ This is the BuddyPress for Sensei plugin stylesheet.
 .no-lesson-msg {
     margin: 20px 0 0 10px;
 }
+.course-container .my-messages-link-container {
+    display: none !important;
+}

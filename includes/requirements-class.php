@@ -4,7 +4,7 @@ if (!defined('ABSPATH'))
     exit;
 
 
-class Plugin_Requirements_Check {
+class SB_Plugin_Requirements_Check {
     function __construct() {
         add_action( 'admin_init', array( $this, 'backup_activation_check' ) );
 

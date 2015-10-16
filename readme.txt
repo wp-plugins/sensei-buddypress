@@ -3,10 +3,10 @@ Contributors: buddyboss
 Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, sensei, woothemes sensei, woothemes, lms, learning management system, learning, courses, courseware, education, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
-Tested up to: 4.2.2
-Stable tag: 1.0.7
+Tested up to: 4.3.1
+Stable tag: 1.0.9
 Sensei requires at least: 1.8.0
-Sensei tested up to: 1.8.2
+Sensei tested up to: 1.8.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,6 +116,20 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 4. **Plugin Settings** - Configure the core plugin options.
 
 == Changelog ==
+
+= 1.0.9 =
+* Optimised member type conversion query
+* Added new course filters
+* Added new hook in bp_sensei_create_courses_page
+* Fixed no admin inside a newly created group
+* Fixed issue to create a forum only if checked
+* Added .pot translation file
+
+= 1.0.8 =
+* Removed "My Messages"
+* Various CSS fixes
+* Fixed php error during bulk plugin activation
+* Added support for plugin bbPress Topics for Posts
 
 = 1.0.7 =
 * Added notice if no lesson found in Course Group

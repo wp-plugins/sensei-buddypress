@@ -115,6 +115,11 @@ if ( class_exists( 'BP_Group_Extension' ) ) :
 			}
 			
 			if ( isset( $_POST[ 'bp_group_course' ] )  && ( $_POST[ 'bp_group_course' ] ) == '-1' ) {
+				
+				if ( !$old_course_id ) {
+					return;
+				}
+				
 				delete_post_meta($old_course_id, 'bp_course_group');
 				groups_delete_groupmeta( $group_id, 'bp_course_attached' );
 				bp_sensei_remove_members_group( $old_course_id, $group_id );

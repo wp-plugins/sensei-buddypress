@@ -74,6 +74,10 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
 				add_action( 'sensei_user_course_end', array( $this, 'bp_sensei_user_course_end_activity' ), 100, 2 );
 				add_action( 'comment_post', array( $this, 'bp_sensei_lesson_comment' ), 100, 2 );
 				add_action( 'sensei_complete_quiz', array( $this, 'bp_sensei_complete_quiz_activity' ), 100 );
+				
+				if ( class_exists('BBP_PostTopics') ) {
+					add_filter( 'bbppt_eligible_post_types', array( $this, 'bp_sensei_add_post_types' ));
+				}
             }
         }
 
@@ -587,9 +591,18 @@ if( !class_exists('BuddyPress_Sensei_Loader') ):
                 bp_set_member_type( $user_id, 'teacher' );
             }
         }
+		
+		/**
+		 * Support for bbPress Topics for Posts
+		 * @param type $content
+		 * @return type array
+		 */
+		public function bp_sensei_add_post_types( $content ) {
+			array_push( $content, 'lesson' ); // add extra post_types here 
+			return $content;
+		}
 
-
-    }
+	}
     BuddyPress_Sensei_Loader::instance();
 
 endif;

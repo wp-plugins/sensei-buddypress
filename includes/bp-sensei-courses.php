@@ -38,6 +38,9 @@ function bp_sensei_completed_courses_page_content() {
 }
 
 function bp_sensei_create_courses_page() {
+	
+	do_action('bp_sensei_create_courses_page');
+	
 	wp_redirect(admin_url( 'post-new.php?post_type=course' ));
 }
 

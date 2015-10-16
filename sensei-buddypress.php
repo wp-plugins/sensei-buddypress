@@ -5,7 +5,7 @@
  * Description: Integrate the WooThemes Sensei plugin with BuddyPress, so you can add social activity to your education site.
  * Author:      BuddyBoss
  * Author URI:  http://buddyboss.com
- * Version:     1.0.7
+ * Version:     1.0.9
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -59,7 +59,7 @@ if ( !defined( 'BUDDYPRESS_SENSEI_PLUGIN_FILE' ) ) {
 function buddypress_sensei_requirements()
 {
 
-    global $Plugin_Requirements_Check;
+    global $SB_Plugin_Requirements_Check;
 
     $requirements_Check_include  = BUDDYPRESS_SENSEI_PLUGIN_DIR  . 'includes/requirements-class.php';
 
@@ -70,7 +70,7 @@ function buddypress_sensei_requirements()
             require( $requirements_Check_include );
         }
         else{
-            $msg = sprintf( __( "Couldn't load Plugin_Requirements_Check class at:<br/>%s", 'sensei-buddypress' ), $requirements_Check_include );
+            $msg = sprintf( __( "Couldn't load SB_Plugin_Requirements_Check class at:<br/>%s", 'sensei-buddypress' ), $requirements_Check_include );
             throw new Exception( $msg, 404 );
         }
     }
@@ -80,8 +80,8 @@ function buddypress_sensei_requirements()
         echo $msg;
     }
 
-    $Plugin_Requirements_Check = new Plugin_Requirements_Check();
-    $Plugin_Requirements_Check->activation_check();
+    $SB_Plugin_Requirements_Check = new SB_Plugin_Requirements_Check();
+    $SB_Plugin_Requirements_Check->activation_check();
 
 }
 register_activation_hook( __FILE__, 'buddypress_sensei_requirements' );
